@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Alimentación - INFIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fuente y colores base */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+        }
+       /* Definición del color naranja de INFIT */
+       .text-infit-orange {
+           color: #e59902; 
+       }
+       .bg-infit-orange {
+           background-color: #e59902;
+       }
+    </style>
+</head>
+<body class="bg-[#1a1a1a] min-h-screen p-4 sm:p-8 flex flex-col items-center text-white">
+
+    <header class="w-full max-w-4xl text-center mb-8">
+        <div class="mb-4">
+            <img src="logo-infit.jpg" alt="Logotipo INFIT" class="w-24 h-24 mx-auto object-cover rounded-full"> 
+        </div>
+        <h1 class="text-4xl font-bold text-white mb-2">Plan de Alimentación</h1>
+        <p class="text-xl text-infit-orange font-semibold mb-4">¡Tu Mejor Versión!</p>
+        <p class="text-md text-white">Este es un plan de alimentación personalizado diseñado para ayudarte a alcanzar tus objetivos de bienestar y salud.</p>
+    </header>
+
+    <main class="w-full max-w-4xl bg-[#222222] p-6 rounded-3xl shadow-lg border border-gray-700">
+
+        <div class="w-full mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">
+                <span class="text-infit-orange">🧾</span> PLAN DE ALIMENTACIÓN PERSONALIZADO
+            </h2>
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow mb-6">
+                <ul class="list-disc list-inside text-white space-y-1">
+                    <li><strong class="text-infit-orange">Nombre:</strong> Naty</li>
+                    <li><strong class="text-infit-orange">Objetivo:</strong> Bajar (% de grasa) / Mejorar hábitos / control de peso por Gonartrosis</li>
+                    <li><strong class="text-infit-orange">Fecha de nacimiento:</strong> 23/10/1959</li>
+                    <li><strong class="text-infit-orange">Estatura:</strong> 1.51 cm</li>
+                    <li><strong class="text-infit-orange">Peso actual:</strong> 63.25 kg</li>
+                    <li><strong class="text-infit-orange">Grasa corporal:</strong> 35.5 %</li>
+                    <li><strong class="text-infit-orange">Fecha de inicio:</strong> 11/10/2025</li>
+                    <li><strong class="text-infit-orange">Siguiente consulta:</strong> 11/12/2025</li>
+                </ul>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-white mb-4">
+                <span class="text-infit-orange">📊</span> CÁLCULO DE CALORÍAS Y MACRONUTRIENTES
+            </h2>
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                <ul class="list-disc list-inside text-white space-y-1">
+                    <li><strong class="text-infit-orange">Resumen Diario Calorías:</strong> $1,540~kcal/dia$</li>
+                    <li><strong class="text-infit-orange">Proteínas:</strong> 135 g</li>
+                    <li><strong class="text-infit-orange">Grasas:</strong> 43 g</li>
+                    <li><strong class="text-infit-orange">Carbohidratos:</strong> 155 g</li>
+                    <li><strong class="text-infit-orange">Distribución diaria:</strong> 3 comidas principales y 2 snacks</li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="border-gray-700 my-8"/>
+
+        <div class="flex justify-center gap-4 mb-8">
+            <button id="tabA" class="px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 bg-infit-orange text-white shadow-lg">
+                Variación 1
+            </button>
+            <button id="tabB" class="px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 bg-transparent text-infit-orange border-2 border-infit-orange">
+                Variación 2
+            </button>
+        </div>
+
+        <div id="contentA" class="tab-content transition-opacity duration-500 ease-in-out opacity-100 block">
+            <h2 class="text-2xl font-bold text-white mb-4">Variación 1 <span class="text-sm font-normal text-white">(Lunes, Miércoles, Viernes y Domingo)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9H3a9 9 0 009 9z" />
+                        </svg>
+                        Desayuno
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>2 huevos + 2 claras revueltos con espinaca y jitomate</li>
+                        <li>2 tostadas integrales</li>
+                        <li>1 taza de papaya o melón</li>
+                        <li>1 café o té sin azúcar</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Snack 1 (media mañana)
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>1 plátano mediano</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Comida
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>120 g de pechuga de pollo asada</li>
+                        <li>$\frac{1}{2}$ taza de arroz integral</li>
+                        <li>Ensalada verde con pepino, lechuga, zanahoria, limón y aceite de oliva</li>
+                        <li>1 tortilla de maíz</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Snack 2 (media tarde)
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>1 naranja o 1 taza de melón</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Cena
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>1 lata de atún en agua con jitomate, cebolla y limón</li>
+                        <li>3 galletas saladas integrales o 1 rebanada de pan integral</li>
+                        <li>1 taza de sandía o mandarina</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9H3a9 9 0 009 9z" />
+                        </svg>
+                        Comida Trampa (Domingo)
+                    </h3>
+                    <p class="text-white">Una comida libre, con moderación. Ejemplo: 2 tacos al pastor con piña y agua fresca sin azúcar añadida. El resto del día, mantén la estructura del plan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contentB" class="tab-content transition-opacity duration-500 ease-in-out opacity-0 hidden">
+            <h2 class="text-2xl font-bold text-white mb-4">Variación 2 <span class="text-sm font-normal text-white">(Martes, Jueves y Sábado)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9H3a9 9 0 009 9z" />
+                        </svg>
+                        Desayuno
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>1 taza de avena cocida en agua o leche descremada ($\frac{1}{2}$ taza seca)</li>
+                        <li>1 cucharadita de miel o canela</li>
+                        <li>1 huevo cocido</li>
+                        <li>1 mandarina o naranja</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Snack 1 (media mañana)
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>1 taza de melón o plátano chico</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Comida
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>120 g de bistec de res magra o pollo</li>
+                        <li>$\frac{1}{2}$ taza de frijoles o lentejas</li>
+                        <li>Ensalada de nopales con jitomate, cebolla y cilantro</li>
+                        <li>1 tortilla de maíz</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Snack 2 (media tarde)
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>1 manzana o naranja</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Cena
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>2 huevos cocidos + ensalada de lechuga, jitomate y pepino</li>
+                        <li>2 tostadas horneadas integrales</li>
+                        <li>1 taza de sandía</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-gray-700 my-8"/>
+
+        <div class="w-full mt-10">
+            <h2 class="text-2xl font-bold text-white mb-4"><span class="text-infit-orange">🛒</span> Lista de Compras Semanal</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9H3a9 9 0 009 9z" />
+                        </svg>
+                        Proteínas
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>Pechuga de pollo</li>
+                        <li>Atún en agua</li>
+                        <li>Huevo</li>
+                        <li>Bistec de res magra</li>
+                        <li>Lentejas o frijoles</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Carbohidratos
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>Arroz integral</li>
+                        <li>Avena</li>
+                        <li>Pan integral o tostadas integrales</li>
+                        <li>Tortillas de maíz</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Verduras y Frutas
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>Espinaca, Jitomate, Lechuga, Zanahoria</li>
+                        <li>Pepino, Nopales, Cebolla</li>
+                        <li>Melón, Sandía, Plátano, Naranja, Mandarina, Manzana, Papaya</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold mb-2 flex items-center gap-2 text-infit-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Grasas y Otros
+                    </h3>
+                    <ul class="list-disc list-inside text-white space-y-1">
+                        <li>Aceite de oliva</li>
+                        <li>Limón</li>
+                        <li>Miel natural (opcional)</li>
+                        <li>Café o té sin azúcar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-gray-700 my-8"/>
+
+        <div class="w-full mt-10">
+            <h2 class="text-2xl font-bold text-white mb-4"><span class="text-infit-orange">💡</span> Recomendaciones</h2>
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                <ul class="list-disc list-inside text-white space-y-2">
+                    <li><strong class="text-infit-orange">Hidratación constante:</strong> Bebe al menos 2 a 2.5 litros de agua al día. Lleva una botella contigo y da pequeños sorbos durante el día.</li>
+                    <li><strong class="text-infit-orange">Horarios sugeridos, no obligatorios:</strong> Los tiempos de comida pueden adaptarse a tus necesidades y ritmo de vida.</li>
+                    <li><strong class="text-infit-orange">Evita ayunos prolongados:</strong> No dejes pasar más de 4 horas sin comer para mantener tu metabolismo activo.</li>
+                    <li><strong class="text-infit-orange">Mantén el control en la comida trampa:</strong> Disfruta tu comida libre los domingos, pero evita excederte en porciones o repetir.</li>
+                    <li><strong class="text-infit-orange">Evita bebidas azucaradas y alcohol:</strong> Prefiere agua natural, tés sin azúcar o agua mineral, y evita refrescos y alcohol.</li>
+                    <li><strong class="text-infit-orange">Prepara tus comidas con anticipación:</strong> Cocina porciones para varios días y guarda en recipientes individuales. La planeación te ayuda a cumplir el plan.</li>
+                    <li><strong class="text-infit-orange">No te saltes snacks:</strong> Son importantes para controlar el hambre, mantener energía estable y prevenir atracones.</li>
+                    <li><strong class="text-infit-orange">Escucha a tu cuerpo:</strong> Si te sientes muy lleno o con hambre, es válido ajustar ligeramente porciones. Coméntalo en tu siguiente consulta.</li>
+                    <li><strong class="text-infit-orange">Monitorea tus métricas:</strong> Se recomienda revisar tu progreso una vez cada 30 días.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full mt-10">
+            <h2 class="text-2xl font-bold text-white mb-4">
+                <span class="text-infit-orange">⚖️</span> Cláusula de Responsabilidad
+            </h2>
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                <p class="text-white mb-4">
+                    Este plan de alimentación es de carácter orientativo y personalizado. **No sustituye una valoración médica, ni psicológica**. Se recomienda consultar con un profesional de la salud en caso de padecer enfermedades crónicas, estar bajo tratamiento médico, o tener antecedentes de trastornos alimenticios. El seguimiento de este plan es responsabilidad del usuario.
+                </p>
+            </div>
+        </div>
+
+        <div class="w-full mt-10">
+            <h2 class="text-2xl font-bold text-white mb-4">
+                <span class="text-infit-orange">📌</span> Nota
+            </h2>
+            <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:shadow-xl transition-shadow">
+                <p class="text-white mb-4">
+                    Se recomienda el uso de **L-Carnitina**, el cual ayuda a potenciar tus resultados ya que desplaza la grasa excedente para convertirla en energía.
+                </p>
+                <p class="text-white">
+                    Cada día que sigues tu plan es un paso más hacia <strong class="text-infit-orange">"Tu mejor versión"</strong>. Este es un proceso lento, pero con constancia, los resultados llegarán. 💪
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const tabA = document.getElementById('tabA');
+        const tabB = document.getElementById('tabB');
+        const contentA = document.getElementById('contentA');
+        const contentB = document.getElementById('contentB');
+
+        // Función para establecer la pestaña activa
+        function setActiveTab(activeButton, inactiveButton, activeContent, inactiveContent) {
+            // Estilos para el botón activo
+            activeButton.classList.remove('bg-transparent', 'text-infit-orange', 'border-infit-orange');
+            activeButton.classList.add('bg-infit-orange', 'text-white', 'shadow-lg');
+            // Estilos para el botón inactivo
+            inactiveButton.classList.remove('bg-infit-orange', 'text-white', 'shadow-lg');
+            inactiveButton.classList.add('bg-transparent', 'text-infit-orange', 'border-2', 'border-infit-orange');
+            
+            // Mostrar contenido activo con transición
+            activeContent.classList.remove('hidden', 'opacity-0');
+            activeContent.classList.add('block', 'opacity-100');
+            // Ocultar contenido inactivo con transición
+            inactiveContent.classList.remove('block', 'opacity-100');
+            inactiveContent.classList.add('hidden', 'opacity-0');
+        }
+
+        // Inicializar con Variación 1 activa al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            setActiveTab(tabA, tabB, contentA, contentB);
+        });
+
+        // Eventos de click
+        tabA.addEventListener('click', () => {
+            setActiveTab(tabA, tabB, contentA, contentB);
+        });
+
+        tabB.addEventListener('click', () => {
+            setActiveTab(tabB, tabA, contentB, contentA);
+        });
+    </script>
+</body>
+</html>
